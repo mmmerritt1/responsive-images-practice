@@ -6,7 +6,11 @@
   <meta charset="utf-8">
   <style type="text/css">
     body {
-      background-image: url("gradient-background.jpg");
+      /*background-image: url("gradient-background.jpg");*/
+      /*background: linear-gradient(magenta, yellow, orange, red);*/
+      /*background: radial-gradient(magenta, yellow, orange, red);*/
+      background: linear-gradient(to right, magenta, yellow, orange, red);
+      /*background: linear-gradient(magenta, yellow, orange, red);*/
     }
 
     img { max-width: 100%; }
@@ -25,12 +29,29 @@
       to make calculating srcset easier for us :) */
       width: 55%;
     }
+
+    header {
+      padding: 1rem;
+      background-color: orange;
+      background-image: url('./space-header.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
   </style>
 </head>
 
 <body>
+
   <header>
+    <body> {
+
+
+    }
+
+    </body>
     <h1>Cat Life</h1>
+
     <nav>
       <ul>
         <li><a href="#">Yawning</a></li>
@@ -47,7 +68,8 @@
 
     <div class="photo-container">
       <div class="photo-frame">
-        <img srcset="yeah.jpg 1280w, yeah-800w.jpg 800w, yeah-400w.jpg 400w"
+          <!-- swap out pictures of other types and see what it looks like -->
+        <img srcset="dragon.jpg 1280w, yeah-800w.jpg 800w, yeah-400w.jpg 400w, yeah.jpg 400w, grr.jpg 500w"
               sizes="(max-width: 800px) 400px, (max-width: 1600px) 800px, (min-width: 1601px) 1200px"
               src="yeah-800w.jpg"
               alt="really cool cat yelling 'yeah!'">
